@@ -23,13 +23,13 @@ function App() {
           <Sider> <SideMenu /> </Sider>
           <Layout>
             <Header> <PageHeader /> </Header>
-            <Content>
+            <Content style={{display: 'flex', justifyContent: 'center', padding: '50px 0', overflow: 'auto'}}>
             <Routes>
               {
                 menu.map(item => {
                   if (item.children) {
                     return item.children.map(child => 
-                    <Route path={child.path} element={child.component} />
+                    <Route path={child.path} element={<child.component />} />
                     )
                   }
                 })
@@ -37,7 +37,6 @@ function App() {
               <Navigate to={"/abstract/feature"} />
             </Routes>
             </Content>
-            <Footer>尾部</Footer>
           </Layout>
         </Layout>
       </BrowserRouter>

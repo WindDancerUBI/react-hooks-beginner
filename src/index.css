@@ -17,3 +17,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.bnt-margin {
+  margin-bottom: 13px;
+  margin-right: 20px;
+}
