@@ -9,6 +9,8 @@ import Chapter2_1 from "../pages/chapter2-1";
 import Chapter2_2 from "../pages/chapter2-2";
 import Chapter2_3 from "../pages/chapter2-3";
 import Chapter2_4 from "../pages/chapter2-4";
+import Chapter3_1 from "../pages/chapter3-1";
+import Chapter3_2 from "../pages/chapter3-2";
 
 export const menu = [
   {
@@ -56,6 +58,24 @@ export const menu = [
         key: "2-4",
         path: "/useState/lazy",
         component: Chapter2_4
+      }
+    ]
+  },
+  {
+    label: "3. useEffect",
+    key: "3",
+    children: [
+      {
+        label: "3.1 useEffect的基本用法",
+        key: "3-1",
+        path: "/useEffect/base",
+        component: Chapter3_1
+      },
+      {
+        label: "3.2 useEffect如何清除effect",
+        key: "3-2",
+        path: "/useEffect/clearEffect",
+        component: Chapter3_2
       }
     ]
   }

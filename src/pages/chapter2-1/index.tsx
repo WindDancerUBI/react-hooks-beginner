@@ -16,7 +16,7 @@ const Chapter2_1 = () => {
 
   return (
     <Typography>
-      <Title level={2}>基本用法</Title>
+      <Title level={2}>useState的基本用法</Title>
       <Paragraph>
         <Text code>const [state, setState] = useState(initValue)</Text>{" "}
       </Paragraph>
