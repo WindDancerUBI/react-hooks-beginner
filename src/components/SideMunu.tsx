@@ -25,7 +25,7 @@ const SideMenu = () => {
         <SubMenu key={item.key} title={item.label}>
           {item.children.map((child) => (
             <Menu.Item key={child.key}>
-              <Link to={child.path}>{child.label}</Link>
+              <Link to={child.path} key={child.path}>{child.label}</Link>
             </Menu.Item>
           ))}
         </SubMenu>

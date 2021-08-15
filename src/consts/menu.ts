@@ -11,6 +11,10 @@ import Chapter2_3 from "../pages/chapter2-3";
 import Chapter2_4 from "../pages/chapter2-4";
 import Chapter3_1 from "../pages/chapter3-1";
 import Chapter3_2 from "../pages/chapter3-2";
+import Chapter3_3 from "../pages/chapter3-3";
+import Chapter3_4 from "../pages/chapter3-4";
+import Chapter4_1 from "../pages/chapter4-1";
+import Chapter4_2 from "../pages/chapter4-2";
 
 export const menu = [
   {
@@ -76,7 +80,37 @@ export const menu = [
         key: "3-2",
         path: "/useEffect/clearEffect",
         component: Chapter3_2
+      },
+      {
+        label: "3.3 useEffect的依赖项问题",
+        key: "3-3",
+        path: "/useEffect/dependencies",
+        component: Chapter3_3
+      },
+      {
+        label: "3.4 useEffect依赖项的选择",
+        key: "3-4",
+        path: "/useEffect/chooseDependencies",
+        component: Chapter3_4
       }
     ]
-  }
+  },
+  {
+    label: "4. useLayoutEffect",
+    key: "4",
+    children: [
+      {
+        label: "4.1 useLayoutEffect与useEffect的区别",
+        key: "4-1",
+        path: "/useLayoutEffect/differences",
+        component: Chapter4_1
+      },
+      {
+        label: "4.2 何时使用useLayoutEffect",
+        key: "4-2",
+        path: "/useLayoutEffect/whenToUse",
+        component: Chapter4_2
+      },
+    ]
+  },
 ]
