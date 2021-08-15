@@ -15,6 +15,10 @@ import Chapter3_3 from "../pages/chapter3-3";
 import Chapter3_4 from "../pages/chapter3-4";
 import Chapter4_1 from "../pages/chapter4-1";
 import Chapter4_2 from "../pages/chapter4-2";
+import Chapter5_1 from "../pages/chapter5_1";
+import Chapter5_2 from "../pages/chapter5_2";
+import Chapter6_1 from "../pages/chapter6-1";
+import Chapter6_2 from "../pages/chapter6_2";
 
 export const menu = [
   {
@@ -106,11 +110,47 @@ export const menu = [
         component: Chapter4_1
       },
       {
-        label: "4.2 何时使用useLayoutEffect",
+        label: "4.2 useLayoutEffect使用场景",
         key: "4-2",
         path: "/useLayoutEffect/whenToUse",
         component: Chapter4_2
       },
     ]
   },
+  {
+    label: "5. useReducer",
+    key: "5",
+    children: [
+      {
+        label: "5-1 useReducer的使用",
+        key: "5-1",
+        path: "/useReducer/use",
+        component: Chapter5_1
+      },
+      {
+        label: "5-2 useReducer如何dispatch函数",
+        key: "5-2",
+        path: "/useReducer/thunk",
+        component: Chapter5_2
+      },
+    ]
+  },
+  {
+    label: "6. useContext",
+    key: "6",
+    children: [
+      {
+        label: "6-1 useContext的使用",
+        key: "6-1",
+        path: "/useContext/use",
+        component: Chapter6_1
+      },
+      {
+        label: "6-2 useContext实现redux",
+        key: "6-2",
+        path: "/useContext/redux",
+        component: Chapter6_2
+      },
+    ]
+  }
 ]
