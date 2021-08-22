@@ -19,6 +19,8 @@ import Chapter5_1 from "../pages/chapter5_1";
 import Chapter5_2 from "../pages/chapter5_2";
 import Chapter6_1 from "../pages/chapter6-1";
 import Chapter6_2 from "../pages/chapter6_2";
+import Chapter7_1 from "../pages/chapter7-1";
+import Chapter7_2 from "../pages/chapter7-2";
 
 export const menu = [
   {
@@ -150,6 +152,24 @@ export const menu = [
         key: "6-2",
         path: "/useContext/redux",
         component: Chapter6_2
+      },
+    ]
+  },
+  {
+    label: "7. useRef",
+    key: "7",
+    children: [
+      {
+        label: "7-1 useRef的作用",
+        key: "7-1",
+        path: "/useRef/use",
+        component: Chapter7_1
+      },
+      {
+        label: "7-2 useRef的特性",
+        key: "7-2",
+        path: "/useRef/feature",
+        component: Chapter7_2
       },
     ]
   }
