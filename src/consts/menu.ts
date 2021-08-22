@@ -21,6 +21,8 @@ import Chapter6_1 from "../pages/chapter6-1";
 import Chapter6_2 from "../pages/chapter6_2";
 import Chapter7_1 from "../pages/chapter7-1";
 import Chapter7_2 from "../pages/chapter7-2";
+import Chapter8_1 from "../pages/chapter8-1";
+import Chapter8_2 from "../pages/chapter8-2";
 
 export const menu = [
   {
@@ -170,6 +172,24 @@ export const menu = [
         key: "7-2",
         path: "/useRef/feature",
         component: Chapter7_2
+      },
+    ]
+  },
+  {
+    label: "8. useImperativeHandle",
+    key: "8",
+    children: [
+      {
+        label: "8-1 React.forwardRef的使用",
+        key: "8-1",
+        path: "/useImperativeHandle/forwardRef",
+        component: Chapter8_1
+      },
+      {
+        label: "8-2 useImperativeHandle的作用",
+        key: "8-2",
+        path: "/useImperativeHandle/use",
+        component: Chapter8_2
       },
     ]
   }
