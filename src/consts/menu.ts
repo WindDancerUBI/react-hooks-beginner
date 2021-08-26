@@ -5,6 +5,8 @@
  * @Function: 该文件用途描述
  */
 
+import Chapter10_1 from "../pages/chapter10-1";
+import Chapter10_2 from "../pages/chapter10-2";
 import Chapter2_1 from "../pages/chapter2-1";
 import Chapter2_2 from "../pages/chapter2-2";
 import Chapter2_3 from "../pages/chapter2-3";
@@ -203,6 +205,24 @@ export const menu = [
         key: "9-1",
         path: "/useMemo/use",
         component: Chapter9_1
+      },
+    ]
+  },
+  {
+    label: "10. useCallback",
+    key: "10",
+    children: [
+      {
+        label: "10-1 useCallback的作用",
+        key: "10-1",
+        path: "/useCallback/use",
+        component: Chapter10_1
+      },
+      {
+        label: "10-2 useCallback的优化",
+        key: "10-2",
+        path: "/useCallback/optimize",
+        component: Chapter10_2
       },
     ]
   }
