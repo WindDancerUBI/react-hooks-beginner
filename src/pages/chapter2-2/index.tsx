@@ -18,11 +18,11 @@ const Chapter2_2 = () => {
 
   const addNum = () => {
     setNum(num + 1)
-    console.log('num', num)
+    console.log('1', num)
     setNum(num + 2)
-    console.log('num', num)
+    console.log('2', num)
     setNum(num + 3)
-    console.log('num', num)
+    console.log('3', num)
   };
 
   return (

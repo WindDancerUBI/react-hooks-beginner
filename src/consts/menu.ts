@@ -5,6 +5,8 @@
  * @Function: 该文件用途描述
  */
 
+import Chapter1_1 from "../pages/chapter1-1";
+import Chapter1_2 from "../pages/chapter1-2";
 import Chapter10_1 from "../pages/chapter10-1";
 import Chapter10_2 from "../pages/chapter10-2";
 import Chapter2_1 from "../pages/chapter2-1";
@@ -36,13 +38,13 @@ export const menu = [
         label: "1.1 React的特点",
         key: "1-1",
         path: "/abstract/feature",
-        component: 'a'
+        component: Chapter1_1,
       },
       {
         label: "1.2 React-Hook的历史",
         key: "1-2",
         path: "/abstract/history",
-        component: 'a'
+        component: Chapter1_2,
       }
     ]
   },
