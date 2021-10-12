@@ -10,12 +10,11 @@ import React, { useEffect, useState } from "react";
 const { Title, Text, Paragraph } = Typography;
 
 function Chapter3_4() {
-  const [refresh, setRefresh] = useState<boolean>(false)
-  const [dataSource, setDataSource] = useState<any>([]);
-  const [otherObject, setOtherObject] = useState<{[key: string]: any}>({})
-
-  const constValue = 1
-  const object = {}
+  const constValue = 1 // 普通常量
+  const object = {}  // 普通对象
+  const [refresh, setRefresh] = useState<boolean>(false) // 普通状态值
+  const [otherObject, setOtherObject] = useState<{[key: string]: any}>({}) // 对象状态值
+  const [dataSource, setDataSource] = useState<any>([]); // 对象状态值
 
   useEffect(() => {
     console.log("页面重新渲染了")
@@ -25,7 +24,7 @@ function Chapter3_4() {
       {key: 3, name: '小张', age: Math.ceil(Math.random()* 30), gender: 'male'},
       {key: 4, name: '小李', age: Math.ceil(Math.random()* 30), gender: 'female'},
     ])
-  }, [refresh])
+  }, [constValue])
 
   return (
     <Typography>

@@ -14,13 +14,13 @@ function Chapter10_2() {
   const [num, setNum] = useState<number>(0);
   const [refresh, setRefresh] = useState<boolean>(false)
 
-  const addNum = () => {
-    setNum(num => num + 1)
-  }
-
-  // const addNum = useCallback(() => {
+  // const addNum = () => {
   //   setNum(num => num + 1)
-  // }, [])
+  // }
+
+  const addNum = useCallback(() => {
+    setNum(num => num + 1)
+  }, [])
   
   return (
     <Typography>
