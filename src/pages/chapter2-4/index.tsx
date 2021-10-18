@@ -16,6 +16,7 @@ const Chapter2_4 = () => {
     alert("init");
   });
 
+  /* eslint-disable */
   return (
     <Typography>
       <Title level={2}>useState惰性初始化</Title>
@@ -42,6 +43,7 @@ const Chapter2_4 = () => {
       <FunctionState />
     </Typography>
   );
+  /* eslint-disable */
 };
 
 export default Chapter2_4;

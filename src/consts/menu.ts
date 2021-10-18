@@ -9,6 +9,8 @@ import Chapter1_1 from "../pages/chapter1-1";
 import Chapter1_2 from "../pages/chapter1-2";
 import Chapter10_1 from "../pages/chapter10-1";
 import Chapter10_2 from "../pages/chapter10-2";
+import Chapter11_1 from "../pages/chapter11-1";
+import Chapter11_2 from "../pages/chapter11-2";
 import Chapter2_1 from "../pages/chapter2-1";
 import Chapter2_2 from "../pages/chapter2-2";
 import Chapter2_3 from "../pages/chapter2-3";
@@ -31,7 +33,7 @@ import Chapter9_1 from "../pages/chapter9-1";
 
 export const menu = [
   {
-    label: "1. React基本简介",
+    label: "1. React Introduce",
     key: "1",
     children: [
       {
@@ -225,6 +227,24 @@ export const menu = [
         key: "10-2",
         path: "/useCallback/optimize",
         component: Chapter10_2
+      },
+    ]
+  },
+  {
+    label: "11. custom hook",
+    key: "11",
+    children: [
+      {
+        label: "11-1 自定义一个useArray hook",
+        key: "11-1",
+        path: "/custom_hook/useArray",
+        component: Chapter11_1
+      },
+      {
+        label: "11-2 使用自定义hook封装重复代码",
+        key: "11-2",
+        path: "/custom_hook/useQuery",
+        component: Chapter11_2
       },
     ]
   }
