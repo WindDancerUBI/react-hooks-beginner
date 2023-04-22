@@ -8,7 +8,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { Layout } from "antd";
 import SideMenu from "./components/SideMunu";
-import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { menu } from "./consts/menu";
 import PageHeader from "./components/PageHeader";
 
@@ -21,42 +21,40 @@ function App() {
   };
   return (
     <div className="App">
-      <HashRouter>
-        <Layout style={{ height: "100%" }}>
-          <Sider
-            width={256}
-            collapsible
-            collapsed={collapsed}
-            onCollapse={onCollapse}
+      <Layout style={{ height: "100%" }}>
+        <Sider
+          width={256}
+          collapsible
+          collapsed={collapsed}
+          onCollapse={onCollapse}
+        >
+          <SideMenu />
+        </Sider>
+        <Layout>
+          <Header>
+            <PageHeader />
+          </Header>
+          <Content
+            style={{
+              // display: "flex",
+              // justifyContent: "center",
+              padding: "50px",
+              overflow: "auto",
+            }}
           >
-            <SideMenu />
-          </Sider>
-          <Layout>
-            <Header>
-              <PageHeader />
-            </Header>
-            <Content
-              style={{
-                // display: "flex",
-                // justifyContent: "center",
-                padding: "50px",
-                overflow: "auto",
-              }}
-            >
-              <Routes>
-                {menu.map((item) => {
-                  if (item.children) {
-                    return item.children.map((child) => (
-                      <Route path={child.path} element={<child.component />} />
-                    ));
-                  }
-                })}
-                <Navigate to={"/abstract/feature"} />
-              </Routes>
-            </Content>
-          </Layout>
+            <Routes>
+              {menu.map((item) => {
+                if (item.children) {
+                  return item.children.map((child) => (
+                    <Route path={child.path} element={<child.component />} />
+                  ));
+                }
+              })}
+              <Navigate to={"/abstract/feature"} />
+            </Routes>
+          </Content>
         </Layout>
-      </HashRouter>
+      </Layout>
     </div>
   );
 }
