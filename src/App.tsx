@@ -12,7 +12,7 @@ import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { menu } from "./consts/menu";
 import PageHeader from "./components/PageHeader";
 
-const { Sider, Header, Content, Footer } = Layout;
+const { Sider, Header, Content } = Layout;
 
 function App() {
   const [collapsed, setCollapsed] = useState(false);
