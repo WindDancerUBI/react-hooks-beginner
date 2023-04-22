@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.36a06336.chunk.css",
-    "main.js": "/static/js/main.d7d8dd01.chunk.js",
-    "main.js.map": "/static/js/main.d7d8dd01.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4d82acea.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4d82acea.js.map",
-    "static/css/2.630ef54a.chunk.css": "/static/css/2.630ef54a.chunk.css",
-    "static/js/2.cb647a58.chunk.js": "/static/js/2.cb647a58.chunk.js",
-    "static/js/2.cb647a58.chunk.js.map": "/static/js/2.cb647a58.chunk.js.map",
-    "static/js/3.12e86837.chunk.js": "/static/js/3.12e86837.chunk.js",
-    "static/js/3.12e86837.chunk.js.map": "/static/js/3.12e86837.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.630ef54a.chunk.css.map": "/static/css/2.630ef54a.chunk.css.map",
-    "static/css/main.36a06336.chunk.css.map": "/static/css/main.36a06336.chunk.css.map",
-    "static/js/2.cb647a58.chunk.js.LICENSE.txt": "/static/js/2.cb647a58.chunk.js.LICENSE.txt"
+    "main.css": "/react-hooks-beginner/static/css/main.36a06336.chunk.css",
+    "main.js": "/react-hooks-beginner/static/js/main.d7d8dd01.chunk.js",
+    "main.js.map": "/react-hooks-beginner/static/js/main.d7d8dd01.chunk.js.map",
+    "runtime-main.js": "/react-hooks-beginner/static/js/runtime-main.54a6b5eb.js",
+    "runtime-main.js.map": "/react-hooks-beginner/static/js/runtime-main.54a6b5eb.js.map",
+    "static/css/2.630ef54a.chunk.css": "/react-hooks-beginner/static/css/2.630ef54a.chunk.css",
+    "static/js/2.c717c5c8.chunk.js": "/react-hooks-beginner/static/js/2.c717c5c8.chunk.js",
+    "static/js/2.c717c5c8.chunk.js.map": "/react-hooks-beginner/static/js/2.c717c5c8.chunk.js.map",
+    "static/js/3.12e86837.chunk.js": "/react-hooks-beginner/static/js/3.12e86837.chunk.js",
+    "static/js/3.12e86837.chunk.js.map": "/react-hooks-beginner/static/js/3.12e86837.chunk.js.map",
+    "index.html": "/react-hooks-beginner/index.html",
+    "static/css/2.630ef54a.chunk.css.map": "/react-hooks-beginner/static/css/2.630ef54a.chunk.css.map",
+    "static/css/main.36a06336.chunk.css.map": "/react-hooks-beginner/static/css/main.36a06336.chunk.css.map",
+    "static/js/2.c717c5c8.chunk.js.LICENSE.txt": "/react-hooks-beginner/static/js/2.c717c5c8.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d82acea.js",
+    "static/js/runtime-main.54a6b5eb.js",
     "static/css/2.630ef54a.chunk.css",
-    "static/js/2.cb647a58.chunk.js",
+    "static/js/2.c717c5c8.chunk.js",
     "static/css/main.36a06336.chunk.css",
     "static/js/main.d7d8dd01.chunk.js"
   ]
