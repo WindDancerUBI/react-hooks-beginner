@@ -8,7 +8,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { Layout } from "antd";
 import SideMenu from "./components/SideMunu";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { HashRouter, Navigate, Route, Routes } from "react-router-dom";
 import { menu } from "./consts/menu";
 import PageHeader from "./components/PageHeader";
 
@@ -21,7 +21,7 @@ function App() {
   };
   return (
     <div className="App">
-      <BrowserRouter>
+      <HashRouter>
         <Layout style={{ height: "100%" }}>
           <Sider
             width={256}
@@ -56,7 +56,7 @@ function App() {
             </Content>
           </Layout>
         </Layout>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
